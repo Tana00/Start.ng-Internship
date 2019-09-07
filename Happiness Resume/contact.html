@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="body2">
+    <div class="wrapper">
+      <div class="introd">
+      <img src="images\photo.png" alt="face_photo" class="image" />
+      <div class="overlay"><h1>Hello....</h1>
+        <p>
+            What can I help you with today? <br />
+            Drop a message and I'll get back to you within 24 hours.
+          </p>
+      </div>
+    </div>
+
+      <div class="contact">
+        <form action="http://localhost/mail.php" method="POST">
+          <hr />
+          <h3>HIT ME UP</h3>
+          <hr />
+          <br />
+          <label>Name</label> <br />
+          <input
+            name="name"
+            type="text"
+            class="validate"
+            placeholder="Your Name..."
+            minlength="4"
+            required
+          />
+          <br />
+
+          <label>Email</label> <br />
+          <input
+            name="email"
+            type="email"
+            class="validate"
+            placeholder="Your Email Address..."
+            required
+          />
+          <br />
+
+          <label>Title</label> <br />
+          <input
+            type="text"
+            name="title"
+            placeholder="Your Message Title..."
+            required
+          />
+          <br />
+
+          <label>Message</label> <br />
+          <textarea
+            name="message"
+            type="text"
+            class="validate"
+            id="message"
+            minlength="200"
+            name="message"
+            required
+          ></textarea>
+          <br />
+
+          <input name="submit" type="submit" value="Contact Me" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
